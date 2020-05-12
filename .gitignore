@@ -1,4 +1,20 @@
+*.sim
+*.runs
 *.cache
 *.hw
-*.runs
+*.ip_user_files
+*.log
+*.jou
+.Xil
+*.srcs/**/ip
+*.srcs/**/*.bxml
+*.srcs/**/hw_handoff
+*.srcs/**/*ooc.xdc
+*.srcs/**/sim
+*.srcs/**/synth
+*.srcs/**/ui
+*.srcs/**/ipshared
+
+
+
 
