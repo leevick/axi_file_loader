@@ -5,8 +5,7 @@
       "device": "xc7vx690tffg1927-2",
       "name": "testbench",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2019.1",
-      "validated": "true"
+      "tool_version": "2019.1"
     },
     "design_tree": {
       "clk_gen_sim_0": "",
@@ -82,17 +81,9 @@
                 "value": "0",
                 "value_src": "constant"
               },
-              "CLK_DOMAIN": {
-                "value": "testbench_clk_gen_sim_0_0_axi_clk_0",
-                "value_src": "default_prop"
-              },
               "DATA_WIDTH": {
                 "value": "256",
                 "value_src": "auto"
-              },
-              "FREQ_HZ": {
-                "value": "300000000",
-                "value_src": "user_prop"
               },
               "HAS_BRESP": {
                 "value": "1",
@@ -332,35 +323,11 @@
         "ports": {
           "m_axi_aclk": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_BUSIF": {
-                "value": "m_axi",
-                "value_src": "constant"
-              },
-              "ASSOCIATED_RESET": {
-                "value": "m_axi_aresetn",
-                "value_src": "constant"
-              },
-              "CLK_DOMAIN": {
-                "value": "testbench_clk_gen_sim_0_0_axi_clk_0",
-                "value_src": "default_prop"
-              },
-              "FREQ_HZ": {
-                "value": "300000000",
-                "value_src": "user_prop"
-              }
-            }
+            "direction": "I"
           },
           "m_axi_aresetn": {
             "type": "rst",
-            "direction": "I",
-            "parameters": {
-              "POLARITY": {
-                "value": "ACTIVE_LOW",
-                "value_src": "constant"
-              }
-            }
+            "direction": "I"
           },
           "cfg_prepared": {
             "direction": "O"
@@ -377,10 +344,10 @@
       }
     },
     "interface_nets": {
-      "axi_bram_ctrl_0_BRAM_PORTB": {
+      "axi_bram_ctrl_0_BRAM_PORTA": {
         "interface_ports": [
-          "axi_bram_ctrl_0/BRAM_PORTB",
-          "blk_mem_gen_0/BRAM_PORTB"
+          "axi_bram_ctrl_0/BRAM_PORTA",
+          "blk_mem_gen_0/BRAM_PORTA"
         ]
       },
       "axi_file_loader_0_m_axi": {
@@ -389,10 +356,10 @@
           "axi_bram_ctrl_0/S_AXI"
         ]
       },
-      "axi_bram_ctrl_0_BRAM_PORTA": {
+      "axi_bram_ctrl_0_BRAM_PORTB": {
         "interface_ports": [
-          "axi_bram_ctrl_0/BRAM_PORTA",
-          "blk_mem_gen_0/BRAM_PORTA"
+          "axi_bram_ctrl_0/BRAM_PORTB",
+          "blk_mem_gen_0/BRAM_PORTB"
         ]
       }
     },
